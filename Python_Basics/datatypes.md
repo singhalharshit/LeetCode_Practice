@@ -2,7 +2,7 @@
 
 - Number 
 - String
-- List -> A Continuous Memory space with multiple indexing
-- Tuple
-- Dictionary
-- 
+- List -> [] -> A Continuous Memory space with multiple indexing
+- Tuple -> () -> 
+- Dictionary -> {}
+- Set -> ()
