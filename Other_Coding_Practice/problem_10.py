@@ -6,7 +6,7 @@
 
 while True:
     num = int(input("Enter an input: "))
-    if num >0 and num <=10:
+    if 0< num <=10:
         print(num)
         break
     else:
