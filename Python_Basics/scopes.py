@@ -44,3 +44,39 @@ print(printsurname())
 
 
 # You see when we did print(surname) it broke since it could not find any variable surname inside the code since we were calling it outside it's scope
+
+# More with scopes
+x=99
+
+def calc(y):
+    z=x+y
+    return z
+
+
+print(calc(1))
+
+# So here we can see that x was taken from the global scope
+
+a=56
+
+def func3():
+    global a
+    a=88
+    return a
+
+# so now into this case we can see that how do we modify the value of global variable but yeah this practice should be avoided
+
+func3()
+print(a)
+
+
+# Bit more tricky
+
+def f1():
+    a=27
+    def f2():
+        print(a)
+    return f2()
+
+res= f1()
+print(res)
